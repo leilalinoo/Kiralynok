@@ -1,9 +1,10 @@
 package model;
 
 public class Tabla {
+
     private char[][] T = new char[8][8];
     private char UresCella;
-    
+
     public Tabla(char c) {
         this.UresCella = c;
 
@@ -13,21 +14,32 @@ public class Tabla {
             }
         }
     }
-    
-     public String Megjelenit() {
+
+    public String Megjelenit() {
         String tablazat = "";
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                tablazat += ""+T[i][j];
+                tablazat += "" + T[i][j];
             }
-            tablazat +="\n";
+            tablazat += "\n";
         }
         return tablazat;
     }
-     
-    public char[][] getT(){
+
+    public void Elhelyez(int db) {
+    int i = 0;
+    while (i < db) {
+        int x = (int) (Math.random() * 8);
+        int y = (int) (Math.random() * 8);
+        if (this.T[x][y] == this.UresCella) {
+            this.T[x][y] = 'K';
+            i++;
+        }
+    }
+}
+
+    public char[][] getT() {
         return T;
     }
-    
-    
+
 }
