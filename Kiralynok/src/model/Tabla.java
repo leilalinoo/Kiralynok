@@ -73,7 +73,7 @@ public class Tabla {
         }
         return db;
     }
-
+    
     public char[][] getT() {
         return T;
     }

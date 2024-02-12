@@ -1,8 +1,15 @@
 package kiralynok;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import model.Tabla;
 
 public class main {
+    
+    private static final String SEP = System.lineSeparator();
     
     public static void main(String[] args) {
         
@@ -19,5 +26,9 @@ public class main {
         System.out.println(t.UresOszlopokSzama());
         System.out.println(t.UresSorokSzama());
         
+        
+        String fajlnev = "tablak64.txt";
+ 
     }
+    
 }
