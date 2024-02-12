@@ -228,7 +228,7 @@ public class Kiralynok extends javax.swing.JFrame {
     }//GEN-LAST:event_uresOszlopokSzamaActionPerformed
 
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
-       jLabel6.setText(""+tabla.UresOszlop(Integer.parseInt((String) jSpinner1.getValue())));
+//       jLabel6.setText(""+tabla.UresOszlop(Integer.parseInt((String) jSpinner1.getValue())));
         
        
     }//GEN-LAST:event_jSpinner1StateChanged
