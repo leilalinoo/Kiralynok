@@ -4,6 +4,8 @@
  */
 package kiralynok;
 
+import model.Tabla;
+
 /**
  *
  * @author aleil
@@ -11,5 +13,8 @@ package kiralynok;
 public class main {
     public static void main(String[] args) {
         
+        Tabla t = new Tabla('*');
+        System.out.println(t.Megjelenit());
+        ;
     }
 }
